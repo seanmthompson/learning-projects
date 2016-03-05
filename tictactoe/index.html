@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Advanced DOM Scripting</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <h1>Tic-Tac-Toe</h1>
+
+        <div id="tictac">
+            
+        </div>
+        
+        <div id="winner">
+            <div>
+                <p></p>
+                <button id="newGame">Start a new game</button>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+        <script src="script.js"></script>
+        <script type="text/javascript">
+            $(document).ready( function() {
+               var board = new Board('#tictac');
+            });
+        </script>
+
+    </body>
+</html>
